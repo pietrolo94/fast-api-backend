@@ -9,7 +9,10 @@ app = FastAPI()
 # Abilita CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Consenti richieste da React
+    allow_origins=[
+        "http://localhost:3000",  # Permetti richieste da localhost (sviluppo)
+        "https://pietrozoffoli-portfolio.vercel.app"  # Permetti richieste da Vercel
+    ],
     allow_credentials=True,
     allow_methods=["GET", "POST"],  # Puoi aggiungere altri metodi se necessari
     allow_headers=["*"],  # Permetti tutti gli headers
