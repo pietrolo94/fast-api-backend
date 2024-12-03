@@ -1,0 +1,15 @@
+# Ignora i file __pycache__
+__pycache__/
+*.pyc
+
+# Ignora gli ambienti virtuali
+venv/
+env/
+ENV/
+
+# Ignora i file di configurazione dell'IDE
+.vscode/
+.idea/
+
+# Ignora il file di configurazione di pytest
+*.log
