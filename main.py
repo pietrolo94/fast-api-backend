@@ -39,7 +39,7 @@ def get_dati_atleta():
         rows = table.find_all("tr")
         
         # Analizza ogni riga della tabella
-        for row in rows[1:]:  # Salta la riga dell'intestazione
+        for row in rows:  # Salta la riga dell'intestazione
             cells = row.find_all("td")
             if len(cells) >= 6:  # Assicura che ci siano abbastanza celle
                 # Estrai il valore dell'immagine
